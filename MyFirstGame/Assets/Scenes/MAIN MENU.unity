@@ -4249,7 +4249,6 @@ GameObject:
   m_Component:
   - component: {fileID: 337264746}
   - component: {fileID: 337264747}
-  - component: {fileID: 337264748}
   m_Layer: 5
   m_Name: Video Player
   m_TagString: Untagged
@@ -4314,20 +4313,6 @@ VideoPlayer:
   m_Looping: 1
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
---- !u!114 &337264748
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 337264745}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51df26068556e5143a97e08f3acf3e90, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  active: {fileID: 337264745}
-  counter: 0
 --- !u!1 &339600181
 GameObject:
   m_ObjectHideFlags: 0
@@ -6486,7 +6471,7 @@ GameObject:
   - component: {fileID: 497088334}
   - component: {fileID: 497088333}
   m_Layer: 5
-  m_Name: Button (3)
+  m_Name: flapsButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6551,7 +6536,29 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 497088334}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 88918283}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 337264745}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &497088334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18686,7 +18693,7 @@ GameObject:
   - component: {fileID: 1668562376}
   - component: {fileID: 1668562375}
   m_Layer: 5
-  m_Name: Button (4)
+  m_Name: LandingButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18752,7 +18759,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 337264745}
+      - m_Target: {fileID: 88918283}
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
@@ -18761,11 +18768,11 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 337264748}
-        m_MethodName: toggleVideo
-        m_Mode: 1
+      - m_Target: {fileID: 337264745}
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
