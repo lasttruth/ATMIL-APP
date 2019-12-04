@@ -89,7 +89,6 @@ GameObject:
   - component: {fileID: 4782446222834922340}
   - component: {fileID: 139083291898973698}
   - component: {fileID: 7561894320903749752}
-  - component: {fileID: 855739538033547635}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -192,7 +191,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 855739538033547635}
+      - m_Target: {fileID: 0}
         m_MethodName: CamerSwitch
         m_Mode: 1
         m_Arguments:
@@ -203,18 +202,3 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &855739538033547635
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8931308036399091783}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1911e87553404a4d872a1a04ce50c11, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FrontCamera: {fileID: 0}
-  SecondCamera: {fileID: 0}
-  counter: 0

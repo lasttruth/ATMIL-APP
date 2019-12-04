@@ -7,12 +7,29 @@ public class CameraControler : MonoBehaviour
     public Transform[] views;
     public float transitionSpeed;
     Transform currentView;
-    // Start is called before the first frame update
-    void Start()
+    
+    // Camera Changes can be used with UI button and keyboard
+   
+    public void Topview()
     {
-        
-    }
+        currentView = views[1];
 
+    }
+    public void Sideview()
+    {
+        currentView = views[2];
+
+    }
+    public void Isoview()
+    {
+        currentView = views[4];
+
+    }
+    public void Frontview()
+    {
+        currentView = views[0];
+
+    }
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
