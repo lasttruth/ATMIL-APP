@@ -2,6 +2,7 @@
 # File Created: 01.12.2019 18:55:46
 
 newmtl Material__25
+	Ns 10.0000
 	Ni 1.5000
 	d 1.0000
 	Tr 0.0000
