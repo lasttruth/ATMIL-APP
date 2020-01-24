@@ -77,10 +77,13 @@ public class GameManager : MonoBehaviour
         if (currentQuestion.isTrue)
         {
             Debug.Log("Oongo Bongo");
+            factText.text = "YOU right";
+            
         }
         else
         {
             Debug.Log("Stupid");
+            factText.text = "Wait...No";
         }
         StartCoroutine(TransitionToNextQuestion());
     }
@@ -91,10 +94,13 @@ public class GameManager : MonoBehaviour
         if (!currentQuestion.isTrue)
         {
             Debug.Log("Oongo Bongo");
+            factText.text = "Ight you smart";
+
         }
         else
         {
             Debug.Log("Stupid");
+            factText.text = "Nah burh!";
         }
         StartCoroutine(TransitionToNextQuestion());
     }

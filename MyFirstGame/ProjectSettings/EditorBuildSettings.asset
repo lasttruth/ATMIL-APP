@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PlaceHolderTest.unity
     guid: 1aa14d1d6b0a9c54ab7fd8f8e8a39edd
+  - enabled: 1
+    path: Assets/Scenes/Object Assembly.unity
+    guid: cf6440b4c5d08db43a50d9023fc6b3cb
+  - enabled: 1
+    path: Assets/Scenes/StarterScene.unity
+    guid: 098dffa5c4addbe45bd97262b5dbbfe7
   m_configObjects: {}
