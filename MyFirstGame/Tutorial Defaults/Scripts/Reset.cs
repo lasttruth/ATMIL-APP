@@ -13,4 +13,6 @@ public class Reset : MonoBehaviour
         assembleparts[0].transform.position = defaultPos[0].transform.position;
         assembleparts[1].transform.position = defaultPos[1].transform.position;
     }
+
+
 }
