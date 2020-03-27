@@ -43,3 +43,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf4a1b742d5da904c9bf5c91d0d11806, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  selectedStates: {fileID: 0}
+  currentState: 0
+  mainMenu: {fileID: 0}
+  Profile: {fileID: 0}
+  Lecture: {fileID: 0}
+  WorkShop: {fileID: 0}
+  Library: {fileID: 0}
+  TestCenter: {fileID: 0}
+  MakeUps: {fileID: 0}

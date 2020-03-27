@@ -10,6 +10,9 @@ TagManager:
   - whatButton
   - practicalButton
   - activeButtons
+  - MaterialButtonLayer
+  - MenuState
+  - Canvas
   layers:
   - Default
   - TransparentFX

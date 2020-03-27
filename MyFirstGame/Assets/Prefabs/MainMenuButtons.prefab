@@ -960,6 +960,22 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 8838422541231623386, guid: 3a645379e5ccdf041bde615dd4158ac4,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6610071925595537546, guid: d9706dd9cd44d544884b6558ac36e264,
+        type: 3}
+    - target: {fileID: 8838422541231623386, guid: 3a645379e5ccdf041bde615dd4158ac4,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnProfile
+      objectReference: {fileID: 0}
+    - target: {fileID: 8838422541231623386, guid: 3a645379e5ccdf041bde615dd4158ac4,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8631382554868087734, guid: 3a645379e5ccdf041bde615dd4158ac4,
         type: 3}
       propertyPath: m_Sprite
