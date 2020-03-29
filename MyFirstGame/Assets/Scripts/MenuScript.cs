@@ -11,7 +11,7 @@ public class MenuScript : MonoBehaviour
     {
         Main,
         Profile,
-        Lecture,
+        Lectures,
         WorkShop,
         Library,
         TestCenter,
@@ -23,7 +23,7 @@ public class MenuScript : MonoBehaviour
     //Menu panel Objects
     public GameObject mainMenu;
     public GameObject Profile;
-    public GameObject Lecture;
+    public GameObject lecture;
     public GameObject WorkShop;
     public GameObject Library;
     public GameObject TestCenter;
@@ -52,6 +52,11 @@ public class MenuScript : MonoBehaviour
            
            
             selectedStates = GameObject.FindGameObjectWithTag("MenuState");
+        }
+        else if (currentState == MenuStates.Lectures)
+        {
+            selectedStates = GameObject.FindGameObjectWithTag("MenuState");
+
         }
         else if(currentState == MenuStates.Main)
         {
@@ -85,9 +90,13 @@ public class MenuScript : MonoBehaviour
     // when the lecture button is pressed
     public void OnLecture()
     {
-        currentState = MenuStates.Lecture;
+        currentState = MenuStates.Lectures;
         Debug.Log("It time to get Schooled kid");
-        
+        GameObject.FindGameObjectWithTag("Canvas").transform.GetChild(0).gameObject.SetActive(false);
+        GameObject go = Instantiate(lecture, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
+        GameObject menu = GameObject.Find("Canvas");
+        go.transform.SetParent(menu.transform, false);
+
     }
 
     public void OnWorkShop()
@@ -125,6 +134,10 @@ public class MenuScript : MonoBehaviour
             currentState = MenuStates.Main;
             
 
+        } else if (!mainMenu.activeInHierarchy)
+        {
+            GameObject.FindGameObjectWithTag("Canvas").transform.GetChild(0).gameObject.SetActive(true);
+            currentState = MenuStates.Main;
         }
        
     }

@@ -53,11 +53,17 @@ public class MenuScript : MonoBehaviour
            
             selectedStates = GameObject.FindGameObjectWithTag("MenuState");
         }
+        else if (currentState == MenuStates.Lecture)
+        {
+            selectedStates = GameObject.FindGameObjectWithTag("MenuState");
+
+        }
         else if(currentState == MenuStates.Main)
         {
-            
 
+            
             selectedStates = GameObject.FindGameObjectWithTag("MenuState");
+            
 
         }
         
@@ -69,19 +75,15 @@ public class MenuScript : MonoBehaviour
     // when the profile button is pressed
     public void OnProfile()
     {
-        if (GameObject.Find("Lecture"))
-        {
-            Debug.Log("can not show you this menu");
-        }
-        else
-        {
+       
+        
             Debug.Log("You Pressed Profile smh");
-            Destroy(selectedStates);
+            GameObject.FindGameObjectWithTag("Canvas").transform.GetChild(0).gameObject.SetActive(false);
             currentState = MenuStates.Profile;
             GameObject go = Instantiate(Profile, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
             GameObject menu = GameObject.Find("Canvas");
             go.transform.SetParent(menu.transform, false);
-        }
+        
        
     }
 
@@ -121,18 +123,13 @@ public class MenuScript : MonoBehaviour
     public void OnHome()
     {
         Debug.Log("Ight Immma head out");
-        if (GameObject.Find("MainMenuPanel"))
+        if (!mainMenu.activeInHierarchy && currentState != MenuStates.Main)
         {
-            Debug.Log("can not show you this menu");
-        }
-        else
-        {
-            
-            currentState = MenuStates.Main;
+            GameObject.FindGameObjectWithTag("Canvas").transform.GetChild(0).gameObject.SetActive(true);
             Destroy(selectedStates);
-            GameObject go = Instantiate(mainMenu, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
-            GameObject menu = GameObject.FindGameObjectWithTag("Canvas");
-            go.transform.SetParent(menu.transform, false);
+            currentState = MenuStates.Main;
+            
+
         }
        
     }
