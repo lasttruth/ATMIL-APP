@@ -95,22 +95,22 @@ PrefabInstance:
     - target: {fileID: 2227421759422813549, guid: 28348b8c0f44ae84cb3b1cfd01bb352b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 59.864307
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2227421759422813549, guid: 28348b8c0f44ae84cb3b1cfd01bb352b,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2227421759422813549, guid: 28348b8c0f44ae84cb3b1cfd01bb352b,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2227421759422813549, guid: 28348b8c0f44ae84cb3b1cfd01bb352b,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2227421759422813549, guid: 28348b8c0f44ae84cb3b1cfd01bb352b,
         type: 3}
@@ -141,6 +141,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MainMenuButtons
+      objectReference: {fileID: 0}
+    - target: {fileID: 5539295393002629450, guid: 28348b8c0f44ae84cb3b1cfd01bb352b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8770057715737473376, guid: 28348b8c0f44ae84cb3b1cfd01bb352b,
         type: 3}
