@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3015633873987823352}
   m_Layer: 5
   m_Name: Profile Menu
-  m_TagString: Untagged
+  m_TagString: MenuState
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85,11 +85,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2280813701647791778}
     m_Modifications:
-    - target: {fileID: 465427088852085068, guid: 3a645379e5ccdf041bde615dd4158ac4,
-        type: 3}
-      propertyPath: m_Name
-      value: STATISTICS
-      objectReference: {fileID: 0}
     - target: {fileID: 7909785032619542945, guid: 3a645379e5ccdf041bde615dd4158ac4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -195,6 +190,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 465427088852085068, guid: 3a645379e5ccdf041bde615dd4158ac4,
+        type: 3}
+      propertyPath: m_Name
+      value: STATISTICS
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a645379e5ccdf041bde615dd4158ac4, type: 3}
 --- !u!224 &6637090981761609065 stripped
@@ -210,11 +210,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2280813701647791778}
     m_Modifications:
-    - target: {fileID: 465427088852085068, guid: 3a645379e5ccdf041bde615dd4158ac4,
-        type: 3}
-      propertyPath: m_Name
-      value: Progress Report
-      objectReference: {fileID: 0}
     - target: {fileID: 7909785032619542945, guid: 3a645379e5ccdf041bde615dd4158ac4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -320,6 +315,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 465427088852085068, guid: 3a645379e5ccdf041bde615dd4158ac4,
+        type: 3}
+      propertyPath: m_Name
+      value: Progress Report
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a645379e5ccdf041bde615dd4158ac4, type: 3}
 --- !u!224 &5968943460399689766 stripped
@@ -335,11 +335,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2280813701647791778}
     m_Modifications:
-    - target: {fileID: 465427088852085068, guid: 3a645379e5ccdf041bde615dd4158ac4,
-        type: 3}
-      propertyPath: m_Name
-      value: AMTIL CONNECT
-      objectReference: {fileID: 0}
     - target: {fileID: 7909785032619542945, guid: 3a645379e5ccdf041bde615dd4158ac4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -445,6 +440,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 465427088852085068, guid: 3a645379e5ccdf041bde615dd4158ac4,
+        type: 3}
+      propertyPath: m_Name
+      value: AMTIL CONNECT
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a645379e5ccdf041bde615dd4158ac4, type: 3}
 --- !u!224 &3678981663791522002 stripped
@@ -460,11 +460,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2280813701647791778}
     m_Modifications:
-    - target: {fileID: 465427088852085068, guid: 3a645379e5ccdf041bde615dd4158ac4,
-        type: 3}
-      propertyPath: m_Name
-      value: PROBLEMS AREAS
-      objectReference: {fileID: 0}
     - target: {fileID: 7909785032619542945, guid: 3a645379e5ccdf041bde615dd4158ac4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -569,6 +564,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 465427088852085068, guid: 3a645379e5ccdf041bde615dd4158ac4,
+        type: 3}
+      propertyPath: m_Name
+      value: PROBLEMS AREAS
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a645379e5ccdf041bde615dd4158ac4, type: 3}

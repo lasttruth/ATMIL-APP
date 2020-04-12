@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MenuScript : MonoBehaviour
 {
@@ -29,6 +30,9 @@ public class MenuScript : MonoBehaviour
     public GameObject TestCenter;
     public GameObject MakeUps;
 
+    //private objects**(might change this later)
+    private GameObject ContainerOff;
+    private GameObject ContainerOn;
 
     //when script first starts
     private void Awake()
@@ -72,22 +76,21 @@ public class MenuScript : MonoBehaviour
 
 
 
-    // when the profile button is pressed
+    //Main Menu Buttons
     public void OnProfile()
     {
        
         
-            Debug.Log("You Pressed Profile smh");
-            GameObject.FindGameObjectWithTag("Canvas").transform.GetChild(0).gameObject.SetActive(false);
-            currentState = MenuStates.Profile;
-            GameObject go = Instantiate(Profile, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
-            GameObject menu = GameObject.Find("Canvas");
-            go.transform.SetParent(menu.transform, false);
+        Debug.Log("You Pressed Profile smh");
+        GameObject.FindGameObjectWithTag("Canvas").transform.GetChild(0).gameObject.SetActive(false);
+        currentState = MenuStates.Profile;
+        GameObject go = Instantiate(Profile, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
+        GameObject menu = GameObject.FindGameObjectWithTag("Canvas");
+        go.transform.SetParent(menu.transform, false);
         
        
     }
 
-    // when the lecture button is pressed
     public void OnLecture()
     {
         currentState = MenuStates.Lectures;
@@ -103,6 +106,10 @@ public class MenuScript : MonoBehaviour
     {
         Debug.Log("Remeber Shop class? No just me...");
         currentState = MenuStates.WorkShop;
+        GameObject.FindGameObjectWithTag("Canvas").transform.GetChild(0).gameObject.SetActive(false);
+        GameObject go = Instantiate(WorkShop, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
+        GameObject menu = GameObject.Find("Canvas");
+        go.transform.SetParent(menu.transform, false);
     }
 
     public void OnLibrary()
@@ -124,6 +131,8 @@ public class MenuScript : MonoBehaviour
         currentState = MenuStates.MakeUps;
     }
 
+
+    //Navbar Buttons
     public void OnHome()
     {
         Debug.Log("Ight Immma head out");
@@ -140,6 +149,30 @@ public class MenuScript : MonoBehaviour
             currentState = MenuStates.Main;
         }
        
+    }
+
+    //WorkShopButtons
+    
+    public void OnMeasuring()
+    {
+        ContainerOff = GameObject.Find("Workshop Containter");
+        ContainerOn = GameObject.FindGameObjectWithTag("MenuState");
+
+
+        if (ContainerOff.activeInHierarchy)
+        {
+            ContainerOn.transform.GetChild(1).gameObject.SetActive(true);
+            ContainerOff.transform.gameObject.SetActive(false);
+        }
+    }
+
+
+
+
+    //Inside Measuring Container
+    public void OnMicrometer()
+    {
+        SceneManager.LoadScene("micrometer");
     }
 }
 
