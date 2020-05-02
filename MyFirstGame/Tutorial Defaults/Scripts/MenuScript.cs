@@ -85,7 +85,7 @@ public class MenuScript : MonoBehaviour
         GameObject.FindGameObjectWithTag("Canvas").transform.GetChild(0).gameObject.SetActive(false);
         currentState = MenuStates.Profile;
         GameObject go = Instantiate(Profile, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
-        GameObject menu = GameObject.Find("Canvas");
+        GameObject menu = GameObject.FindGameObjectWithTag("Canvas");
         go.transform.SetParent(menu.transform, false);
         
        
